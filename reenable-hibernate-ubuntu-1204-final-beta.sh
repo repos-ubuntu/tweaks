@@ -6,8 +6,9 @@
 # $> sudo pm-hibernate
 #
 # then turn back on.  If everything works ok, permanently enable hibernate:
-# http://www.ubuntuvibes.com/2012/04/hibernation-disabled-by-default-in.html
+# http://help.ubuntu.com/12.04/ubuntu-help/power-hibernate.html
 # http://askubuntu.com/questions/94754/how-to-modify-policykit-to-allow-hibernation-in-upower 
+# http://www.ubuntuvibes.com/2012/04/hibernation-disabled-by-default-in.html
 
 if [ ! -e /etc/polkit-1/localauthority/50-local.d/com.ubuntu.desktop.pkla ]; then
     cp ~/bin/scripts/ubuntu/reenable-hibernate-ubuntu-1204-final-beta.txt /etc/polkit-1/localauthority/50-local.d/com.ubuntu.desktop.pkla
